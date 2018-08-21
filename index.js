@@ -9,8 +9,8 @@ app.use(bodyParser.json());
 
 // Github endpoint. Used for PR Merges. Test
 app.post('/pr-merge', (req, res) => {
-    console.log(req);
-    console.log(res);
+    // console.log(req.body);
+    console.log(res.body);
     res.status(200).end();
 });
 
