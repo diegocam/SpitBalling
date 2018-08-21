@@ -7,10 +7,10 @@ const port = 8080;
 
 app.use(bodyParser.json());
 
-// Github endpoint. Used for PR Merges.
+// Github endpoint. Used for PR Merges. Another Tests
 app.post('/pr-merge', (req, res) => {
     // console.log(req.body);
-    console.log(res.body);
+    console.log(req.body);
     res.status(200).end();
 });
 
