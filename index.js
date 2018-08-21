@@ -4,10 +4,6 @@ const app = express();
 const port = 8080;
 
 
-if (process.env.DEBUG === 'true') {
-    console.log(process.env);
-}
-
 // Github endpoint. Used for PR Merges
 app.post('/pr-merge', (req, res) => {
     console.log(res);
