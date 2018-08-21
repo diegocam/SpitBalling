@@ -10,7 +10,7 @@ if (process.env.DEBUG === 'true') {
 
 // Github endpoint. Used for PR Merges
 app.post('/pr-merge', (req, res) => {
-    console.log(res);
+    console.log(req);
     res.status(200).end();
 });
 
