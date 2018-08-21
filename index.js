@@ -1,7 +1,7 @@
 // -- Dependencies
 const express = require('express');
 const app = express();
-const port = 8080;
+const port = 80;
 
 
 if (process.env.DEBUG === 'true') {
