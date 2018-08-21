@@ -9,7 +9,8 @@ if (process.env.DEBUG === 'true') {
 }
 
 // Github endpoint. Used for PR Merges
-app.get('/pr-merge', (req, res) => {
+app.post('/pr-merge', (req, res) => {
+    console.log(res);
     res.status(200).end();
 });
 
