@@ -21,7 +21,7 @@ const verifyGitHub = (req) => {
     // return crypto.timingSafeEqual(Buffer.from(theirSignature), Buffer.from(ourSignature));
 };
 
-// Github endpoint. Used for PR Merges. Another Tests
+// Github endpoint. Used for PR Merges. Another Testing
 app.post('/pr-merge', (req, res) => {
     if (verifyGitHub(req)) {
         console.log(req.body);
